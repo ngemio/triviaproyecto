@@ -1,0 +1,46 @@
+<!DOCTYPE html> <!-- Define el tipo de documento HTML5 -->
+<html lang="es"> <!-- Establece el idioma del contenido del documento a español -->
+<head> <!-- Contiene información sobre el documento (metadatos) -->
+    <meta charset="UTF-8"> <!-- Define la codificación de caracteres del documento -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Instruye a Internet Explorer a usar la versión más reciente del motor de renderizado -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Establece la configuración del viewport para dispositivos móviles -->
+    <title>Trivia: Cuánto Sabes de Cs. de la Computación?</title> <!-- Título del documento que se muestra en la pestaña del navegador -->
+    <link rel="stylesheet" href="style.css"> <!-- Vincula el archivo de estilos CSS al documento HTML -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+
+</head>
+<body> <!-- Contiene el contenido visible del documento -->
+    <div class="container"> <!-- Contenedor principal del contenido -->
+        <div class="card"> <!-- Contenedor de la pregunta actual -->
+            <div>
+                <div class="pregunta_nombre">Pregunta</div> <!-- Etiqueta de título para la pregunta actual -->
+            
+                <div class="pregunta_contenido"> <!-- Contenedor del contenido de la pregunta -->
+                
+                    <p class="pregunta_enunciado" id="pregunta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum voluptates quaerat voluptatem eveniet odit suscipit corrupti architecto dolores minus rerum atque reprehenderit tenetur quos obcaecati distinctio, iste nam eius veniam.</p>
+                    <!-- Parrafo con el enunciado de la pregunta, el contenido se reemplaza con JavaScript -->
+                </div>
+            </div>
+            <div class="bajo">
+                    <img class="ayudita" id="Ayudita" src="" alt="Ayudita"> <!-- Contenedor de la multimedia -->
+                    
+                    <div class="pregunta_alternativas"> <!-- Contenedor de las opciones de respuesta -->
+                        <button type="" id="op1">Opción 1</button> <!-- Botón de la opción 1 -->
+                        <button type="" id="op2">Opción 2</button> <!-- Botón de la opción 2 -->
+                        <button type="" id="op3">Opción 3</button> <!-- Botón de la opción 3 -->
+                        <button type="" id="op4">Opción 4</button> <!-- Botón de la opción 4 -->          
+                    </div>
+            </div>
+                
+            </div>
+        </div>
+        <div class="avance"> <!-- Contenedor de la barra de progreso -->
+            <progress id="barra-progreso" max="100" value="70"> 70% </progress> <!-- Barra de progreso que muestra el avance en el cuestionario -->
+        </div>
+     
+    </div>
+    <script src="script.js"></script> <!-- Vincula el archivo JavaScript al documento HTML -->
+</body>
+</html>

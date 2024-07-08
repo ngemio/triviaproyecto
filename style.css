@@ -1,0 +1,148 @@
+/* Rueda de colores https://color.adobe.com/es/create/color-wheel */
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Establece la fuente del texto en el cuerpo del documento */
+    background-image: url(https://media.istockphoto.com/id/483147081/es/foto/futurista-placa-de-circuitos-azul-con-elecrons.jpg?s=612x612&w=0&k=20&c=Pw6ngz7_JKfwOhXgJi7PVqQDOcvNb8smfKDaTr0it0g=); /* Establece el color de fondo del cuerpo del documento */
+    background-size: cover;
+
+}
+
+.container {
+    background-color: #2b96fa5b ; /* Establece el color de fondo del contenedor principal */
+    box-shadow: 0 0 25px #6664ff ; /*Añade una sombra al contenedor principal */
+    margin: 50px auto 0 auto; /* Establece los márgenes superior e inferior a 100px, y centra horizontalmente el contenedor */
+    width: 1200px; /* Establece el ancho del contenedor principal */
+    height: 450px; /* Establece la altura del contenedor principal */
+    padding: 10px; /* Establece el espacio interior del contenedor principal */
+    border: 2px solid #01c4e7;
+    border-radius: 5px; /* Redondea las esquinas del contenedor principal */
+    
+}
+
+.pregunta_nombre, .resultado_titulo {
+    font-family: 'Tilt Neon', cursive;
+    float: left; /* Deja poner varios div uno al lado de otro*/ 
+    text-align: center; /* Centra el texto de los elementos de título de pregunta y resultado */
+    margin: 20px;
+    width: 150px;
+    height: 30px; /* Establece la altura del contenedor principsal */
+    font-size: 2.5rem; /* Establece el tamaño de la fuente de los elementos de título de pregunta y resultado a 1.5 veces el tamaño de fuente base del documento */
+    color: #a0e0fe;
+    text-shadow: 0 0 25px #00388b, 0 0 50px #00388b;
+
+}
+.bajo{
+    margin: 30px 0px 0px 0px; /* Arriba | Derecha | Abajo | Izquierda */
+}
+.ayudita{
+    float: left;
+    border: 2px solid #01c4e7;
+    margin: 0px 60px 0px 50px; /* Arriba | Derecha | Abajo | Izquierda */
+    height: 280px;
+    width: 500px;
+    background: cover;
+    background-color: #03173e;
+    box-shadow: 0 0 5px #01c4e7, 0 0 25px #01c4e7 ;
+}
+
+.pregunta_contenido {
+    padding-top: 0px; /* Establece el espacio interior del contenedor de contenido de la pregunta */
+    margin: 0px 0px 0px 240px; /* Establece los márgenes superior e inferior a 100px, y centra horizontalmente el contenedor */
+}
+
+.pregunta_enunciado {
+    font-family:consolas;
+    color: whitesmoke;
+    height: 60px; /* Establece la altura del enunciado de la pregunta */
+    background-color: rgba(0, 0, 255, 0.276);
+    border: 2px solid #9ff1ff;
+    border-radius: 5px; /* Redondea las esquinas del contenedor principal */
+    margin: 0px;
+    padding-top: 30px;
+    font-size: 1.2rem;
+    width: 880px; /* Establece el ancho del contenedor principal *//* Añade una sombra al contenedor principal */
+    border-radius: 5px; /* Redondea las esquinas del contenedor principal */
+    text-align:  center; /* Justifica el texto del enunciado de la pregunta */
+    
+}
+
+.pregunta_alternativas {
+    margin: auto 60px auto auto; /* Arriba | Derecha | Abajo | Izquierda */
+    height: 400px; /* Establece la altura del contenedor de alternativas de la pregunta */
+    line-height: 1.5; /* Establece la altura de línea del contenedor de alternativas de la pregunta */
+}
+
+.pregunta_alternativas button {
+    display: block; /* Establece el estilo de visualización de los botones de alternativas a bloque */
+    margin: 15px 0px 15px 30px; /* Arriba | Derecha | Abajo | Izquierda *//* Establece los márgenes superior e inferior a 5px, y centra horizontalmente los botones de alternativas */
+    font-family:consolas;
+    font-size: 1rem; /* Establece el tamaño de la fuente de los botones de alternativas a 1 vez el tamaño de fuente base del documento */
+    width: 500px; /* Establece el ancho de los botones de alternativas */
+    padding-top: 15px; /* Establece el espacio interior superior de los botones de alternativas */
+    padding-bottom: 15px; /* Establece el espacio interior inferior de los botones de alternativas */
+    border-radius: 0; /* Establece el radio de las esquinas de los botones de alternativas a 0 (esquinas cuadradas) */
+    background-color: #2b96fae3; /* Establece el color de fondo de los botones de alternativas */
+    border: 2px solid #2b97fa; /* Elimina el borde de los botones de alternativas */
+    transition: 0.2s;
+}
+
+.pregunta_alternativas button:hover { /*Cuando pasamos curson*/
+    background-color: #2b96fae3; /* Establece el color de fondo de los botones*/
+    color: white;
+    border: 2px solid #bddfff;
+    font-weight: bolder;
+    box-shadow: 0 0 10px #2b97fa, 0 0 40px #2b97fa, 0 0 80px #2b97fa;
+}
+
+.avance {
+    vertical-align: bottom; /* Alinea verticalmente el elemento 'avance' en la parte inferior */
+}
+
+.card {
+    height: 300px; /* Establece la altura del elemento con clase 'card' */
+}
+
+#barra-progreso {
+    width: 90%; /* Establece el ancho de la barra de progreso al 90% del contenedor */
+    /* Centra el elemento de la barra de progreso */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+/* Estilos personalizados para cada nivel de resultado */
+#estilo-excelente {
+    color:rgb(35, 161, 18);
+    font-weight: 600;
+}
+
+#estilo-bueno {
+    color:rgb(18, 161, 149);
+    font-weight: 600;
+}
+
+#estilo-aceptable {
+    color:rgb(18, 80, 161);
+    font-weight: 600;
+}
+
+#estilo-regular {
+    color:rgb(214, 162, 19);
+    font-weight: 600;
+}
+
+#estilo-malo {
+    color:rgb(161, 39, 18);
+    font-weight: 600;
+}
+
+.resultado_obtenido {
+    padding-top: 200px; /* Establece el espacio interior superior del elemento 'resultado_obtenido' */
+    font-family:consolas;
+    color: whitesmoke;
+    margin-left: 600px;
+    margin-right: auto;
+    font-size: 2rem; /* Establece el tamaño de la fuente de los botones de alternativas a 1 vez el tamaño de fuente base del documento */
+    
+}
